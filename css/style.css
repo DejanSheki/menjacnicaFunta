@@ -720,6 +720,11 @@ footer .footermodul {
   color: #ad8b3f;
   margin-top: 20px;
 }
+@media (max-width: 480px) {
+  footer .footermodul {
+    border-top: 1px solid #ad8b3f;
+  }
+}
 footer .footermodul a {
   text-decoration: none;
   color: #008f7e;

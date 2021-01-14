@@ -685,6 +685,9 @@ footer {
     .footermodul {
         color: $gold3;
         margin-top: 20px;
+        @media (max-width: $phone) {
+            border-top: 1px solid $gold3;
+        }
         a {
             text-decoration: none;
             color: $green3;
