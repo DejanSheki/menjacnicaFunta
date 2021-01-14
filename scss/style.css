@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #0C0A04;
+}
+
+.stickyAdd {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.add {
+  padding: 0 25px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background: #0C0A04;
+  padding: 10px 50px;
+  z-index: 1;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .logo img {
+  width: 90px;
+}
+
+nav .logo .logo-img {
+  display: contents;
+}
+
+nav .logo .pound {
+  position: relative;
+  right: 80px;
+  height: 85px;
+  width: 74px;
+  bottom: 3px;
+}
+
+nav .logo .logo-funta {
+  -webkit-transform: translateX(-87px);
+          transform: translateX(-87px);
+  font-size: 2.5rem;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+nav .logo a {
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  color: #ad8b3f;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+}
+
+nav ul li:hover::after {
+  content: '';
+  display: block;
+  background: #008f7e;
+  height: 2px;
+  width: 100%;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+nav ul li a {
+  color: #ad8b3f;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+nav ul li a:hover {
+  color: #008f7e;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+nav ul li::after {
+  content: '';
+  display: block;
+  background: #008f7e;
+  height: 2px;
+  width: 0;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+header {
+  height: 90vh;
+}
+
+header .carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  padding-top: 90px;
+}
+
+header .carousel-container .carousel-item {
+  -webkit-animation: fade 1.5s;
+          animation: fade 1.5s;
+  display: none;
+  color: #faf7f1;
+  height: 60vh;
+}
+
+header .carousel-container .carousel-item img {
+  width: 100%;
+}
+
+header .carousel-container .prev,
+header .carousel-container .next {
+  position: absolute;
+  cursor: pointer;
+  color: #faf7f1;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+header .carousel-container .prev:hover,
+header .carousel-container .next:hover {
+  background: rgba(37, 35, 91, 0.5);
+}
+
+header .carousel-container .prev {
+  left: 10px;
+}
+
+header .carousel-container .next {
+  right: 10px;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
