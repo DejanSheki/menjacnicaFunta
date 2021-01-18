@@ -257,7 +257,7 @@ header {
         position: relative;
         padding-top: 70px;
         .carousel-item {
-            animation: fade 8s infinite;
+            // animation: fade 8s;
             display: none;
             color: $white3;
             height: 85vh;
@@ -327,19 +327,10 @@ header {
         }
         @keyframes fade {
             0% {
-                opacity: 0.2;
-            }
-            25% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 1;
-            }
-            75% {
-                opacity: 1;
+                opacity: .3;
             }
             100% {
-                opacity: 0.5;
+                opacity: 1;
             }
         }
         @keyframes fadeOut {

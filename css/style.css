@@ -238,7 +238,6 @@ header .carousel-container {
   padding-top: 70px;
 }
 header .carousel-container .carousel-item {
-  animation: fade 8s infinite;
   display: none;
   color: #faf7f1;
   height: 85vh;
@@ -324,19 +323,10 @@ header .carousel-container .carousel-item .services .text {
 }
 @keyframes fade {
   0% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
+    opacity: 0.3;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 @keyframes fadeOut {
