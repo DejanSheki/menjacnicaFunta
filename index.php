@@ -66,7 +66,7 @@
     <!--kursna lista-->
     <section id="lista" class="list">
         <h2>Kursna lista</h2>
-            <table>
+            <!-- <table>
                 <tr>
                     <th>Država</th>
                     <th>Valuta</th>
@@ -75,8 +75,32 @@
                     <th>Kupovni</th>
                     <th>Sredni</th>
                     <th>Prodajni</th>
-                </tr>
+                </tr> -->
+                <div class="table">
+                <div class="table-row">
+                    <div class="table-cell header">Država</div>
+                    <div class="table-cell header valuta">Valuta</div>
+                    <div class="table-cell header">Oznaka</div>
+                    <div class="table-cell header valuta">Apoen</div>
+                    <div class="table-cell header">Kupovni</div>
+                    <div class="table-cell header">Sredni</div>
+                    <div class="table-cell header">Prodajni</div>
+                </div>
                 <?php foreach($allocatedCurrencies as $k => $cur)
+                    {
+                        echo '<div class="table-row">';
+                        echo '<div class="table-cell lighten">'. '<img src="'. $cur->slika.'">' .'</div>';
+                        echo '<div class="table-cell valuta">'. $cur->valuta .'</div>';
+                        echo '<div class="table-cell cur">'. $cur->oznaka .'</div>';
+                        echo '<div class="table-cell valuta">'. $cur->apoen .'</div>';
+                        echo '<div class="table-cell lighten">'. $cur->kup .'</div>';
+                        echo '<div class="table-cell">'. $cur->sre .'</div>';
+                        echo '<div class="table-cell lighten">'. $cur->pro .'</div>';
+                        echo '</div>';
+                    } 
+                ?>
+                </div>
+                <!-- <?php foreach($allocatedCurrencies as $k => $cur)
                     {
                         echo '<tr>';
                         echo '<td>'. '<img src="'. $cur->slika.'">' .'</td>';
@@ -87,8 +111,8 @@
                         echo '<td>'. $cur->sre .'</td>';
                         echo '<td>'. $cur->pro .'</td>';
                         echo '</tr>';
-                    } ?>
-            </table>
+                    } ?> -->
+            <!-- </table> -->
             <div class="notice">
                 <p><i class="fas fa-star-of-life"></i> Kursevi iz ove kursne liste su informativnog karaktera i skloni su promeni. Za sve preciznije informacije u vezi sa kursevima i kursnom listom budite slobodni da nas kontaktirate.<span><a href="#lokacije"><i class="fas fa-level-down-alt"></i></a></span></p>
             </div>
@@ -103,7 +127,7 @@
                 <p>U našim menjačnicama možete po najpovoljnijim kursevima da zamenite sve valute sa kursne liste. Za veće iznose moguća je korekcija kursa.</p>
             </article>
             <article>
-                <h3>Platni <br> promet</h3>
+                <h3>Platni promet</h3>
                 <p>U našim menjačnicama omogućeno je plaćanje struje, infostana, računa fiksnih i mobilnih telefona, kablovskih operatera, taksi, poreza, školarina i slično.</p>
             </article>
             <article>
@@ -111,7 +135,7 @@
                 <p>U svim našim menjačnicama možete primiti ili poslati novac preko Western Uniona. Isplata je u evrima ili u dinarima.</p>
             </article>
             <article>
-                <h3>Igre na <br> sreću</h3>
+                <h3>Igre na sreću</h3>
                 <p>Ako volite igre na sreću kod nas možete uplatiti LOTO, BINGO ili kupiti neku od mnogobrojnih Greb Greb sresrećke.</p>
             </article>
         </div>

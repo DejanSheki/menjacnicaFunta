@@ -86,7 +86,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "AUD") {
     $aud = new stdClass;
     $aud->id = 3;
-    $aud->slika = "img/Flags-Icon-Set/48x48/AU.png";
+    $aud->slika = "img/Flags-Icon-Set/48x48/AU1.png";
     $aud->valuta = "Australijski Dolar";
     $aud->oznaka = $rates[$i]->code;
     $aud->apoen = $rates[$i]->parity;
@@ -97,7 +97,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "GBP") {
     $gbp = new stdClass;
     $gbp->id = 4;
-    $gbp->slika = "img/Flags-Icon-Set/48x48/GB.png";
+    $gbp->slika = "img/Flags-Icon-Set/48x48/GB1.png";
     $gbp->valuta = "Funta Sterlinga";
     $gbp->oznaka = $rates[$i]->code;
     $gbp->apoen = $rates[$i]->parity;
@@ -108,7 +108,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "CAD") {
     $cad = new stdClass;
     $cad->id = 5;
-    $cad->slika = "img/Flags-Icon-Set/48x48/CA.png";
+    $cad->slika = "img/Flags-Icon-Set/48x48/CA1.png";
     $cad->valuta = "Kanadski dolar";
     $cad->oznaka = $rates[$i]->code;
     $cad->apoen = $rates[$i]->parity;
@@ -119,7 +119,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "SEK") {
     $sek = new stdClass;
     $sek->id = 6;
-    $sek->slika = "img/Flags-Icon-Set/48x48/SE.png";
+    $sek->slika = "img/Flags-Icon-Set/48x48/SE1.png";
     $sek->valuta = "Švedska Kruna";
     $sek->oznaka = $rates[$i]->code;
     $sek->apoen = $rates[$i]->parity;
@@ -130,7 +130,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "DKK") {
     $dkk = new stdClass;
     $dkk->id = 7;
-    $dkk->slika = "img/Flags-Icon-Set/48x48/DK.png";
+    $dkk->slika = "img/Flags-Icon-Set/48x48/DK1.png";
     $dkk->valuta = "Danska Kruna";
     $dkk->oznaka = $rates[$i]->code;
     $dkk->apoen = $rates[$i]->parity;
@@ -141,7 +141,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "NOK") {
     $nok = new stdClass;
     $nok->id = 8;
-    $nok->slika = "img/Flags-Icon-Set/48x48/NO.png";
+    $nok->slika = "img/Flags-Icon-Set/48x48/NO1.png";
     $nok->valuta = "Norveška Kruna";
     $nok->oznaka = $rates[$i]->code;
     $nok->apoen = $rates[$i]->parity;
@@ -152,7 +152,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "HRK") {
     $hrk = new stdClass;
     $hrk->id = 9;
-    $hrk->slika = "img/Flags-Icon-Set/48x48/HR.png";
+    $hrk->slika = "img/Flags-Icon-Set/48x48/HR1.png";
     $hrk->valuta = "Hrvatska Kuna";
     $hrk->oznaka = $rates[$i]->code;
     $hrk->apoen = $rates[$i]->parity;
@@ -163,7 +163,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "BAM") {
     $bam = new stdClass;
     $bam->id = 10;
-    $bam->slika = "img/Flags-Icon-Set/48x48/BA.png";
+    $bam->slika = "img/Flags-Icon-Set/48x48/BA1.png";
     $bam->valuta = "Bosanska Marka";
     $bam->oznaka = $rates[$i]->code;
     $bam->apoen = $rates[$i]->parity;
@@ -174,7 +174,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "RUB") {
     $rub = new stdClass;
     $rub->id = 11;
-    $rub->slika = "img/Flags-Icon-Set/48x48/RU.png";
+    $rub->slika = "img/Flags-Icon-Set/48x48/RU1.png";
     $rub->valuta = "Ruska Rublja";
     $rub->oznaka = $rates[$i]->code;
     $rub->apoen = $rates[$i]->parity;
@@ -185,7 +185,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "CNY") {
     $cny = new stdClass;
     $cny->id = 12;
-    $cny->slika = "img/Flags-Icon-Set/48x48/CN.png";
+    $cny->slika = "img/Flags-Icon-Set/48x48/CN1.png";
     $cny->valuta = "Kineski Juan";
     $cny->oznaka = $rates[$i]->code;
     $cny->apoen = $rates[$i]->parity;
@@ -196,7 +196,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "JPY") {
     $jpy = new stdClass;
     $jpy->id = 13;
-    $jpy->slika = "img/Flags-Icon-Set/48x48/JP.png";
+    $jpy->slika = "img/Flags-Icon-Set/48x48/JP1.png";
     $jpy->valuta = "Japanski Jen";
     $jpy->oznaka = $rates[$i]->code;
     $jpy->apoen = $rates[$i]->parity;
@@ -207,7 +207,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "HUF") {
     $huf = new stdClass;
     $huf->id = 14;
-    $huf->slika = "img/Flags-Icon-Set/48x48/HU.png";
+    $huf->slika = "img/Flags-Icon-Set/48x48/HU1.png";
     $huf->valuta = "Mađarska Forinta";
     $huf->oznaka = $rates[$i]->code;
     $huf->apoen = $rates[$i]->parity;
@@ -218,7 +218,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "CZK") {
     $czk = new stdClass;
     $czk->id = 15;
-    $czk->slika = "img/Flags-Icon-Set/48x48/CZ.png";
+    $czk->slika = "img/Flags-Icon-Set/48x48/CZ1.png";
     $czk->valuta = "Češka Kruna";
     $czk->oznaka = $rates[$i]->code;
     $czk->apoen = $rates[$i]->parity;
@@ -229,7 +229,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "PLN") {
     $pln = new stdClass;
     $pln->id = 16;
-    $pln->slika = "img/Flags-Icon-Set/48x48/PL.png";
+    $pln->slika = "img/Flags-Icon-Set/48x48/PL1.png";
     $pln->valuta = "Poljski Zlot";
     $pln->oznaka = $rates[$i]->code;
     $pln->apoen = $rates[$i]->parity;
@@ -240,7 +240,7 @@ for ( $i = 0; $i < count($rates); $i++) {
   else if($rates[$i]->code === "TRY") {
     $try = new stdClass;
     $try->id = 17;
-    $try->slika = "img/Flags-Icon-Set/48x48/TR.png";
+    $try->slika = "img/Flags-Icon-Set/48x48/TR1.png";
     $try->valuta = "Turska Lira";
     $try->oznaka = $rates[$i]->code;
     $try->apoen = $rates[$i]->parity;

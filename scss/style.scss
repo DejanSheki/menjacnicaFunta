@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;800&display=swap');
 $fontFamily:'Raleway',
 sans-serif;
 $fontSize: 16px;
@@ -241,7 +241,7 @@ nav {
             position: absolute;
             top: 65px;
             right: 0;
-            width: 30%;
+            width: 40%;
             z-index: 1;
             height: 100vh;
         }
@@ -386,6 +386,42 @@ header {
             border-bottom: 5px double;
             border-bottom-color: $green3;
             width: 140px;
+        }
+    }
+    .table {
+        display: table;
+        margin-top: 50px;
+        .table-row {
+            display: table-row;
+            .table-cell {
+                display: table-cell;
+                padding: 0 15px;
+                border-bottom: 1px solid lighten($grey3, 10%);
+                background: lighten($grey3, 50%);
+                text-align: center;
+                vertical-align: middle;
+                font-weight: 400;
+                @media (max-width: $tablet) {
+                    padding: 0 3px;
+                }
+            }
+            .header {
+                padding-bottom: 10px;
+                font-weight: 600;
+            }
+            .cur {
+                font-weight: 600;
+            }
+            .lighten {
+                @media (max-width: $phone) {
+                    background: lighten($grey3, 60%);
+                }
+            }
+            .valuta {
+                @media (max-width: $phone) {
+                    display: none;
+                }
+            }
         }
     }
     table {
@@ -546,9 +582,12 @@ header {
         width: 100%;
         article {
             flex: 0 0 19%;
+            @include flex(center,
+            center,
+            column);
+            text-align: center;
             min-height: 350px;
             color: $white3;
-            text-align: center;
             padding: 30px 50px;
             background: linear-gradient(rgba(0, 143, 126, .5), rgba(0, 143, 126, .5));
             letter-spacing: 1px;
@@ -556,23 +595,26 @@ header {
                 flex: 0 0 100%;
                 margin-bottom: 40px;
                 min-height: unset;
+                padding: 20px 30px;
             }
-            @media (min-width: $tablet) and (max-width: 1224px) {
+            @media (min-width: $tablet) and (max-width: 1600px) {
                 flex: 0 0 45%;
                 margin-bottom: 40px;
             }
-            &:hover {
-                background: rgba(0, 143, 126, 1);
-                cursor: pointer;
-                transform: scale(1.1);
-                h3 {
-                    color: $gold3;
-                    transition: $transition;
-                }
-                p {
-                    color: $black3;
-                    font-weight: 500;
-                    font-size: 0.9rem;
+            @media (min-width: $tablet) {
+                &:hover {
+                    background: rgba(0, 143, 126, 1);
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    h3 {
+                        color: $gold3;
+                        transition: $transition;
+                    }
+                    p {
+                        color: $black3;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                    }
                 }
             }
             h3 {
@@ -580,6 +622,9 @@ header {
                 font-weight: 500;
                 margin-bottom: 20px;
                 line-height: 1.1;
+                @media (max-width: 767px) {
+                    color: $gold3;
+                }
             }
             p {
                 font-size: 1rem;
