@@ -79,4 +79,9 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'flex';
 }
 
-// effects
+// preload
+
+window.addEventListener("load", () => {
+    const preload = document.querySelector(".preload");
+    preload.classList.add("preload-finish");
+});

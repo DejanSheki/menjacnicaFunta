@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <div class="preload">
+        <img src="img/logo23.png" alt="">
+        <h3>Loading...</h3>
+    </div>
     <nav class="sticky2">
         <div class="logo sticky">
             <a href="#">Menjačnica</a>

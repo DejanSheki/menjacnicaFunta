@@ -17,6 +17,43 @@ body {
   background-color: #faf7f1;
 }
 
+.preload {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0c0a04;
+  color: #faf7f1;
+  z-index: 999;
+  transition: opacity 1s ease;
+}
+.preload img {
+  width: 100px;
+  animation: loading 2s infinite alternate;
+}
+.preload h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes loading {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 .stickyAdd {
   transform: scale(0.7);
   transition: 0.7s ease;
@@ -238,6 +275,7 @@ header .carousel-container {
   padding-top: 70px;
 }
 header .carousel-container .carousel-item {
+  transition: all ease-in-out;
   display: none;
   color: #faf7f1;
   height: 85vh;
