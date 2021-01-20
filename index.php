@@ -66,17 +66,7 @@
     <!--kursna lista-->
     <section id="lista" class="list">
         <h2>Kursna lista</h2>
-            <!-- <table>
-                <tr>
-                    <th>Država</th>
-                    <th>Valuta</th>
-                    <th>Oznaka</th>
-                    <th>Apoen</th>
-                    <th>Kupovni</th>
-                    <th>Sredni</th>
-                    <th>Prodajni</th>
-                </tr> -->
-                <div class="table">
+            <div class="table">
                 <div class="table-row">
                     <div class="table-cell header">Država</div>
                     <div class="table-cell header valuta">Valuta</div>
@@ -99,20 +89,7 @@
                         echo '</div>';
                     } 
                 ?>
-                </div>
-                <!-- <?php foreach($allocatedCurrencies as $k => $cur)
-                    {
-                        echo '<tr>';
-                        echo '<td>'. '<img src="'. $cur->slika.'">' .'</td>';
-                        echo '<td>'. $cur->valuta .'</td>';
-                        echo '<td>'. $cur->oznaka .'</td>';
-                        echo '<td>'. $cur->apoen .'</td>';
-                        echo '<td>'. $cur->kup .'</td>';
-                        echo '<td>'. $cur->sre .'</td>';
-                        echo '<td>'. $cur->pro .'</td>';
-                        echo '</tr>';
-                    } ?> -->
-            <!-- </table> -->
+            </div>
             <div class="notice">
                 <p><i class="fas fa-star-of-life"></i> Kursevi iz ove kursne liste su informativnog karaktera i skloni su promeni. Za sve preciznije informacije u vezi sa kursevima i kursnom listom budite slobodni da nas kontaktirate.<span><a href="#lokacije"><i class="fas fa-level-down-alt"></i></a></span></p>
             </div>
