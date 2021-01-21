@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 $fontFamily:'Raleway',
+sans-serif;
+$fontFamilyNum:'Nunito',
 sans-serif;
 $fontSize: 16px;
 $gold3: #ad8b3f;
@@ -275,16 +278,12 @@ header {
         position: relative;
         padding-top: 70px;
         .carousel-item {
-            // animation: fade 8s;
             transition: all ease-in-out;
             display: none;
             color: $white3;
-            height: 85vh;
+            height: 95vh;
             background-position: center;
             background-size: cover;
-            @media (max-width: $medium) {
-                height: 55vh;
-            }
             img {
                 width: 100%;
             }
@@ -293,7 +292,7 @@ header {
                 padding: 50px;
                 border-right: 1px solid $gold3;
                 height: 100%;
-                width: 57%;
+                width: 65%;
                 @include flex(center,
                 center,
                 column);
@@ -303,9 +302,9 @@ header {
                 @media ( max-width: $medium) {
                     padding: 25px;
                 }
-                @media (max-width: $tablet) {
-                    flex-direction: row;
-                }
+                // @media (max-width: $tablet) {
+                //     flex-direction: row;
+                // }
                 h2 {
                     animation: fadeInH2 2.5s;
                     transform: scale(1.5);
@@ -344,22 +343,6 @@ header {
                 }
             }
         }
-        @keyframes fade {
-            0% {
-                opacity: .3;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0.2;
-            }
-        }
         @keyframes fadeIn {
             from {
                 transform: scale(0);
@@ -389,13 +372,37 @@ header {
     }
 }
 
+// effects
+.appear {
+    opacity: 0;
+    transform: translateY(30px) scale(0.5);
+    transition: 0.5s all ease-in-out;
+}
+
+.appearIn {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+
+.flag-appear {
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.flag-appearIn {
+    opacity: 1;
+}
+
 // kursna lista
 .list {
     @include flex(center,
     center,
     column);
-    margin-top: 100px;
+    margin-top: 90px;
     background: $white3;
+    @media (max-width: $tablet) {
+        margin-top: 50px;
+    }
     h2 {
         font-size: 3rem;
         font-weight: 600;
@@ -431,9 +438,18 @@ header {
             .cur {
                 font-weight: 600;
             }
+            .num {
+                font-family: $fontFamilyNum;
+                font-weight: 400;
+            }
             .lighten {
                 @media (max-width: $phone) {
                     background: lighten($grey3, 53%);
+                }
+            }
+            .flag {
+                @media (max-width: 320px) {
+                    display: none;
                 }
             }
             .valuta {
@@ -470,10 +486,13 @@ header {
 // lokacije
 .location {
     max-width: 80%;
-    margin: 100px auto 0 auto;
+    margin: 90px auto 0 auto;
     @include flex(center,
     center,
     column);
+    @media (max-width: $tablet) {
+        margin-top: 50px;
+    }
     h2 {
         font-size: 3rem;
         font-weight: 600;
@@ -529,12 +548,13 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 100px;
+    margin-top: 90px;
     padding: 30px;
     h2 {
         font-size: 3rem;
         font-weight: 500;
         color: $white3;
+        margin: 20px 0 30px 0;
         &::after {
             content: "";
             display: block;

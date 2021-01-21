@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -278,14 +279,9 @@ header .carousel-container .carousel-item {
   transition: all ease-in-out;
   display: none;
   color: #faf7f1;
-  height: 85vh;
+  height: 95vh;
   background-position: center;
   background-size: cover;
-}
-@media (max-width: 1024px) {
-  header .carousel-container .carousel-item {
-    height: 55vh;
-  }
 }
 header .carousel-container .carousel-item img {
   width: 100%;
@@ -295,7 +291,7 @@ header .carousel-container .carousel-item .services {
   padding: 50px;
   border-right: 1px solid #ad8b3f;
   height: 100%;
-  width: 57%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -308,11 +304,6 @@ header .carousel-container .carousel-item .services {
 @media (max-width: 1024px) {
   header .carousel-container .carousel-item .services {
     padding: 25px;
-  }
-}
-@media (max-width: 768px) {
-  header .carousel-container .carousel-item .services {
-    flex-direction: row;
   }
 }
 header .carousel-container .carousel-item .services h2 {
@@ -359,22 +350,6 @@ header .carousel-container .carousel-item .services .text {
     padding: 2px 5px;
   }
 }
-@keyframes fade {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.2;
-  }
-}
 @keyframes fadeIn {
   from {
     transform: scale(0);
@@ -402,14 +377,39 @@ header .carousel-container .carousel-item .services .text {
   }
 }
 
+.appear {
+  opacity: 0;
+  transform: translateY(30px) scale(0.5);
+  transition: 0.5s all ease-in-out;
+}
+
+.appearIn {
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+}
+
+.flag-appear {
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.flag-appearIn {
+  opacity: 1;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 90px;
   background: #faf7f1;
+}
+@media (max-width: 768px) {
+  .list {
+    margin-top: 50px;
+  }
 }
 .list h2 {
   font-size: 3rem;
@@ -450,9 +450,18 @@ header .carousel-container .carousel-item .services .text {
 .list .table .table-row .cur {
   font-weight: 600;
 }
+.list .table .table-row .num {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
 @media (max-width: 480px) {
   .list .table .table-row .lighten {
     background: #fcfcfc;
+  }
+}
+@media (max-width: 320px) {
+  .list .table .table-row .flag {
+    display: none;
   }
 }
 .list .table .table-row .valuta {
@@ -489,12 +498,17 @@ header .carousel-container .carousel-item .services .text {
 
 .location {
   max-width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 90px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .location {
+    margin-top: 50px;
+  }
 }
 .location h2 {
   font-size: 3rem;
@@ -554,13 +568,14 @@ header .carousel-container .carousel-item .services .text {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 100px;
+  margin-top: 90px;
   padding: 30px;
 }
 .services-section h2 {
   font-size: 3rem;
   font-weight: 500;
   color: #faf7f1;
+  margin: 20px 0 30px 0;
 }
 .services-section h2::after {
   content: "";

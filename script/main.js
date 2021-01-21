@@ -81,7 +81,62 @@ function showSlides(n) {
 
 // preload
 
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
+//     const preload = document.querySelector(".preload");
+//     preload.classList.add("preload-finish");
+// });
+window.addEventListener('load', function() {
     const preload = document.querySelector(".preload");
     preload.classList.add("preload-finish");
+
 });
+
+//effects
+
+function scrollAppear() {
+    var elements = document.querySelectorAll(".appear"),
+        positions = [];
+
+    Array.prototype.forEach.call(elements, function(el, index) {
+        var positionInfo = el.getBoundingClientRect();
+        var appearPosition = positionInfo.top;
+
+        positions.push(appearPosition);
+
+    });
+
+    for (var i = 0; i < elements.length; i++) {
+        var screenPosition = window.innerHeight / 1.2;
+        console.log(screenPosition);
+        if (elements[i].getBoundingClientRect().top < screenPosition) {
+            elements[i].classList.add('appearIn');
+        } else {
+            elements[i].classList.remove('appearIn');
+        }
+    }
+}
+window.addEventListener('scroll', scrollAppear);
+
+function scrollFlagAppear() {
+    var elements = document.querySelectorAll(".flag-appear"),
+        positions = [];
+
+    Array.prototype.forEach.call(elements, function(el, index) {
+        var positionInfo = el.getBoundingClientRect();
+        var appearPosition = positionInfo.top;
+
+        positions.push(appearPosition);
+
+    });
+
+    for (var i = 0; i < elements.length; i++) {
+        var screenPosition = window.innerHeight / 1.2;
+        console.log(screenPosition);
+        if (elements[i].getBoundingClientRect().top < screenPosition) {
+            elements[i].classList.add('flag-appearIn');
+        } else {
+            elements[i].classList.remove('flag-appearIn');
+        }
+    }
+}
+window.addEventListener('scroll', scrollFlagAppear);

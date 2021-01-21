@@ -69,10 +69,10 @@
 
     <!--kursna lista-->
     <section id="lista" class="list">
-        <h2>Kursna lista</h2>
+        <div class="appear"><h2>Kursna lista</h2></div>
             <div class="table">
                 <div class="table-row">
-                    <div class="table-cell header">Država</div>
+                    <div class="table-cell header flag">Država</div>
                     <div class="table-cell header valuta">Valuta</div>
                     <div class="table-cell header">Oznaka</div>
                     <div class="table-cell header valuta">Apoen</div>
@@ -83,13 +83,13 @@
                 <?php foreach($allocatedCurrencies as $k => $cur)
                     {
                         echo '<div class="table-row">';
-                        echo '<div class="table-cell lighten">'. '<img src="'. $cur->slika.'">' .'</div>';
+                        echo '<div class="table-cell lighten flag flag-appear">'. '<div><img src="'. $cur->slika .'"></div>' .'</div>';
                         echo '<div class="table-cell valuta">'. $cur->valuta .'</div>';
                         echo '<div class="table-cell cur">'. $cur->oznaka .'</div>';
                         echo '<div class="table-cell valuta">'. $cur->apoen .'</div>';
-                        echo '<div class="table-cell lighten">'. $cur->kup .'</div>';
-                        echo '<div class="table-cell">'. $cur->sre .'</div>';
-                        echo '<div class="table-cell lighten">'. $cur->pro .'</div>';
+                        echo '<div class="table-cell lighten num">'. $cur->kup .'</div>';
+                        echo '<div class="table-cell num ">'. $cur->sre .'</div>';
+                        echo '<div class="table-cell lighten num">'. $cur->pro .'</div>';
                         echo '</div>';
                     } 
                 ?>
@@ -101,7 +101,7 @@
 
     <!--usluge-->
     <section id="usluge" class="services-section">
-        <h2>Usluge</h2>
+        <div class="appear"><h2>Usluge</h2></div>
         <div class="services-container">
             <article>
                 <h3>Menjački poslovi</h3>
@@ -124,7 +124,7 @@
 
     <!--lokacije-->
     <section id="lokacije" class="location">
-        <h2>Lokacije</h2>
+    <div class="appear"><h2>Lokacije</h2></div>
         <div class="location-container">
             <article>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.1523239100355!2d20.478809529263966!3d44.76838229869366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f8dd1bd4fb%3A0x65ca90dc768e757a!2sVojvode%20Stepe%20270%2C%20Beograd!5e0!3m2!1sen!2srs!4v1609254216985!5m2!1sen!2srs"
@@ -184,6 +184,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
+    <script src="script/test.js"></script>
 
 </body>
 
