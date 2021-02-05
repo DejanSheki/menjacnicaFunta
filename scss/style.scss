@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
 $fontFamily:'Raleway',
 sans-serif;
 $fontFamilyNum:'Nunito',
@@ -127,6 +127,7 @@ nav {
         transition: $transition;
         img {
             width: 70px;
+            height: 70px;
         }
         .logo-img {
             display: inline-flex;
@@ -145,6 +146,9 @@ nav {
                 font-weight: 500;
                 @media (max-width: $tablet) {
                     font-size: 2rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -277,6 +281,7 @@ header {
     .carousel-container {
         position: relative;
         padding-top: 70px;
+        background: $black3;
         .carousel-item {
             transition: all ease-in-out;
             display: none;
@@ -544,7 +549,7 @@ header {
     @include flex(space-between,
     center,
     column);
-    background: linear-gradient(rgba(12, 10, 4, .9), rgba(12, 10, 4, .9)), url(../img/services.jpg) center center;
+    background: linear-gradient(rgba(12, 10, 4, .9), rgba(12, 10, 4, .9)), url(../img/services.webp) center center;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -663,7 +668,7 @@ footer {
                 transform: none;
                 margin: 0;
             }
-            h1 {
+            h3 {
                 font-size: 2.5rem;
                 font-weight: 500;
                 @media (max-width: $tablet) {
@@ -678,6 +683,9 @@ footer {
             color: $gold3;
             font-weight: 300;
             text-transform: uppercase;
+            @media (max-width: 320px) {
+                font-size: 1.2rem;
+            }
         }
     }
     .contact {
@@ -703,16 +711,16 @@ footer {
         @media (max-width: $tablet) {
             transform: none;
         }
-        @media (max-width: $phone) {
-            transform: none;
-        }
     }
     .footermodul {
         color: $gold3;
         margin-top: 20px;
-        @media (max-width: $phone) {
-            border-top: 1px solid $gold3;
-        }
+        border-top: 1px solid $gold3;
+        padding-top: 10px;
+        width: 100%;
+        // @media (max-width: $phone) {
+        //     border-top: 1px solid $gold3;
+        // }
         a {
             text-decoration: none;
             color: $green3;

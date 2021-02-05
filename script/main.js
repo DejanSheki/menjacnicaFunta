@@ -21,7 +21,7 @@ $(function() {
     });
     $('.menu a').on('click', function() {
         var ww = $(window).width();
-        if (ww < 768) {
+        if (ww < 1024) {
             $('.menu').slideToggle(700);
             $('.bars-open').toggleClass('bars-open');
         }
@@ -107,7 +107,7 @@ function scrollAppear() {
 
     for (var i = 0; i < elements.length; i++) {
         var screenPosition = window.innerHeight / 1.2;
-        console.log(screenPosition);
+
         if (elements[i].getBoundingClientRect().top < screenPosition) {
             elements[i].classList.add('appearIn');
         } else {
@@ -115,7 +115,7 @@ function scrollAppear() {
         }
     }
 }
-window.addEventListener('scroll', scrollAppear);
+window.addEventListener('scroll', scrollAppear, { passive: true });
 
 function scrollFlagAppear() {
     var elements = document.querySelectorAll(".flag-appear"),
@@ -131,7 +131,7 @@ function scrollFlagAppear() {
 
     for (var i = 0; i < elements.length; i++) {
         var screenPosition = window.innerHeight / 1.2;
-        console.log(screenPosition);
+
         if (elements[i].getBoundingClientRect().top < screenPosition) {
             elements[i].classList.add('flag-appearIn');
         } else {
@@ -139,4 +139,4 @@ function scrollFlagAppear() {
         }
     }
 }
-window.addEventListener('scroll', scrollFlagAppear);
+window.addEventListener('scroll', scrollFlagAppear, { passive: true });

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -108,6 +108,7 @@ nav .logo {
 }
 nav .logo img {
   width: 70px;
+  height: 70px;
 }
 nav .logo .logo-img {
   display: inline-flex;
@@ -129,6 +130,11 @@ nav .logo .logo-funta h1 {
 @media (max-width: 768px) {
   nav .logo .logo-funta h1 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  nav .logo .logo-funta h1 {
+    font-size: 1.5rem;
   }
 }
 nav .logo a {
@@ -274,6 +280,7 @@ nav .bars-open .bar:nth-child(3) {
 header .carousel-container {
   position: relative;
   padding-top: 70px;
+  background: #0c0a04;
 }
 header .carousel-container .carousel-item {
   transition: all ease-in-out;
@@ -564,7 +571,7 @@ header .carousel-container .carousel-item .services .text {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(12, 10, 4, 0.9), rgba(12, 10, 4, 0.9)), url(../img/services.jpg) center center;
+  background: linear-gradient(rgba(12, 10, 4, 0.9), rgba(12, 10, 4, 0.9)), url(../img/services.webp) center center;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -709,12 +716,12 @@ footer .logo .logo-funta {
     margin: 0;
   }
 }
-footer .logo .logo-funta h1 {
+footer .logo .logo-funta h3 {
   font-size: 2.5rem;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  footer .logo .logo-funta h1 {
+  footer .logo .logo-funta h3 {
     font-size: 2rem;
   }
 }
@@ -725,6 +732,11 @@ footer .logo a {
   color: #ad8b3f;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media (max-width: 320px) {
+  footer .logo a {
+    font-size: 1.2rem;
+  }
 }
 footer .contact {
   display: flex;
@@ -759,19 +771,12 @@ footer .stickyAdd {
     transform: none;
   }
 }
-@media (max-width: 480px) {
-  footer .stickyAdd {
-    transform: none;
-  }
-}
 footer .footermodul {
   color: #ad8b3f;
   margin-top: 20px;
-}
-@media (max-width: 480px) {
-  footer .footermodul {
-    border-top: 1px solid #ad8b3f;
-  }
+  border-top: 1px solid #ad8b3f;
+  padding-top: 10px;
+  width: 100%;
 }
 footer .footermodul a {
   text-decoration: none;
